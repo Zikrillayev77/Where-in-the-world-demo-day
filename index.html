@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Where in the world?</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDSDAC4oWbIHcFLjcf5ph50urQci0zJ4gk6zcapr1bw&s=10">
+</head>
+
+<body>
+
+   <div id="navbar" class="sticky top-0 z-50  flex justify-between items-center p-4 list-none">
+      <nav>
+         <a href="index.html">Where in the world?</a>
+      </nav>
+      <ul class="flex space-x-4 gap-9">
+         <li><a href="#all-countries">All Countries</a></li>
+         <li><a href="#regions">Regions</a></li>
+         <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+
+      <div id="regions" class="flex flex-wrap items-center gap-4">
+         <input type="text" id="search-input" placeholder="Search for a country..."
+            class="px-3 py-2 rounded bg-gray-800 text-white" />
+
+         <select id="region-filter" class="bg-gray-800 text-white px-4 py-2 rounded">
+            <option value="">All Regions</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+         </select>
+
+         <button class="cursor-pointer px-4 py-2 rounded bg-gray-800 text-white" id="dark-mode-btn">Dark Mode</button>
+      </div>
+
+   </div>
+
+   <section id="all-countries" class="px-8 pb-12 mt-8">
+      <div id="davlatlani-canteneri" class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      </div>
+   </section>
+
+   <div id="country-modal" class="fixed inset-0 bg-black/50 items-center justify-center z-50 hidden">
+      <div class="bg-white rounded-lg p-6 max-w-lg w-full">
+      </div>
+   </div>
+
+
+   <script src="index.js"></script>
+
+</body>
+
+</html>

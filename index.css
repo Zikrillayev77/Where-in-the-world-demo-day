@@ -1,0 +1,84 @@
+body {
+  background: white;
+  color: black;
+}
+
+body.dark {
+  background: rgb(171, 140, 61);
+  color: white;
+}
+
+#navbar {
+  background: #19222f;
+  color: white;
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+#navbar input,
+#navbar select,
+#navbar #dark-mode-btn {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #d1d5db;
+}
+
+/* Navbar - dark mode */
+body.dark #navbar {
+  background: rgb(171, 140, 61);
+  color: white;
+  color: white;
+}
+
+body.dark #navbar input,
+body.dark #navbar select,
+body.dark #navbar #dark-mode-btn {
+  background: rgb(171, 140, 61) !important;
+  color: #ffffff !important;
+  border: 1px solid #4b5563;
+}
+
+#davlatlani-canteneri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.country-card {
+  width: 320px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 25px;
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+}
+
+.border-badge {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  padding: 0.35rem 1.25rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.border-badge:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+body {
+  background: url("https://static.vecteezy.com/system/resources/previews/010/538/537/large_2x/map-world-seperate-countries-blue-background-with-outline-free-photo.jpg") center/cover no-repeat fixed;
+}
