@@ -55,7 +55,7 @@ function displayCountries(data) {
 
   data.forEach((country, index) => {
     const flag =
-      country.flags.png || "https://via.placeholder.com/320x200?text=Flag";
+      country.flags.png || "https://placehold.co/320x200?text=Flag";
     const capital =
       country.capital && country.capital.length
         ? country.capital[0]
@@ -81,7 +81,7 @@ function displayCountries(data) {
 
 function showModal(country) {
   const flag =
-    country.flags.png || "https://via.placeholder.com/320x200?text=Flag";
+    country.flags.png || "https://placehold.co/320x200?text=Flag";
   const capital =
     country.capital && country.capital.length ? country.capital[0] : "Noma'lum";
   const region = country.region || "Unknown";
